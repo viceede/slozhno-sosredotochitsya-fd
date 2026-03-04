@@ -176,5 +176,14 @@
   margin: var(--section-margin) 0 var(--section-secondary-margin) 0;
 }
 
+.main__picture-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, min-content);
+  gap: var(--section-secondary-margin);
+}
+.main__picture {
+  inline-size: calc(100vw - var(--content-padding) * 2);
+}
 
 
