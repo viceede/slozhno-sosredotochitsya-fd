@@ -1,6 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-gap);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--cover-image);
   background-attachment: fixed;
@@ -120,5 +123,51 @@
   background-color: var(--accent-color);
   color: var(--accent-text-color);
   font-weight: bold;
-
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+.main__section-title {
+  font-weight: bold;
+  font-size: var(--main-font-size);
+  color: var(--secondary-accent-color);
+  margin-bottom: var(--section-margin);
+}
+
+.main__section-secondary-title {
+  font-size: var(--main-font-size);
+  font-weight: bold;
+  margin-bottom: var(--section-secondary-margin); 
+}
+
+.main__section-paragraph {
+  color: var(--text-color);
+  line-height: var(--paragraph-line-height);
+  margin-bottom: var(--section-margin);
+}
+
+.main__section-link {
+  text-shadow: 1px 1px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.main__section-link:hover {
+  text-decoration: underline;
+}
+
+.main__section-link:focus {
+  outline: none;
+}
+
+.main__section-link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+.main__section-paragraph:last-child {
+  margin-bottom: 0;
+}
+
