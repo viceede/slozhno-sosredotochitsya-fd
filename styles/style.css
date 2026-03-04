@@ -186,4 +186,27 @@
   inline-size: calc(100vw - var(--content-padding) * 2);
 }
 
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100vh;
+  min-block-size: 668px;
+}
 
+.footer .header__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.footer.decorated-zone::before {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.footer.decorated-zone::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
