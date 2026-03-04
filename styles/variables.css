@@ -3,5 +3,17 @@
   и их переопределение под различные устройства
 */
 :root {
+  --main-font: "IBM Plex mono", sans-serif;
+  --main-font-size: 18px;
+  --accent-title-mobile-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --accent-title-desktop-tablet-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --accent-title-line-height: 82.5%;
   --cover-image: url(../images/cover-image-dark.png);
+  --content-padding: 10px;
+  /*Цвета*/
+  --accent-color: #FF0070;
+  --secondary-accent-color: #FF0070; /*цвет для заголовков, декоративных рамок в шапке и подвале */
+  --accent-title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --accent-text-color: #000028;
 }

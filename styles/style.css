@@ -4,9 +4,98 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--cover-image);
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  block-size: 1vh;
+  padding: var(--content-padding);
+}
+
+.header {
   min-block-size: 668px;
+  block-size: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, min-content);
+  gap: 55px;
+}
+
+.header::before {
+  position: absolute;
+  justify-self: end;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--secondary-accent-color);
+  border-right: 1px solid var(--secondary-accent-color); 
+}
+
+.header::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--secondary-accent-color);
+  border-left: 1px solid var(--secondary-accent-color);
+}
+
+.rec-container {
+  justify-self: end;
+  color: var(--secondary-accent-color);
+}
+
+.header__rec-sign {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__rec-sign::after {
+  display: block;
+  content:'';
+  width: 9px;
+  height: 9px;
+  background-color: var(--secondary-accent-color);
+  box-shadow: 0 0 5px 2px var(--secondary-accent-color);
+  border-radius: 50%;
+}
+
+
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  inline-size: 70px;
+  text-transform: lowercase;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-accent-color);
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--secondary-accent-color);
+}
+
+.header__title {
+  font-size: var(--accent-title-mobile-font-size);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--accent-title-color);
+  line-height: var(--accent-title-line-height);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-weight: bold;
+
 }
