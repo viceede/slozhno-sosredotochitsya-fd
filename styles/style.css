@@ -210,3 +210,23 @@
   bottom: 0;
   left: 0;
 }
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding: 20px;
+    --global-gap: 60px;
+  }
+
+  .header .header__title {
+    margin-left: -20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 30px;
+  }
+
+  .header__describtion {
+    inline-size: 364px;
+    justify-self: right;
+  }
+}
