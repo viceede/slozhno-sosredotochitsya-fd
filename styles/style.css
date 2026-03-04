@@ -171,3 +171,10 @@
   margin-bottom: 0;
 }
 
+.main__section-third-title {
+  font-weight: normal;
+  margin: var(--section-margin) 0 var(--section-secondary-margin) 0;
+}
+
+
+
