@@ -261,6 +261,50 @@
     margin-left: 20px;
   }
 
+  .main__picture-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1.198fr 1.66fr;
+    gap: 20px;
+    grid-template-areas: 
+      "sunset sunset ice-cream"
+      "tape books ice-cream"
+      "tape street street";
+  }
+
+  .main__picture {
+    object-fit: cover;
+  }
+  
+  .main__picture:nth-child(1) {
+    grid-area: sunset;
+    height: 192px;
+    width: 479px;  
+  }
+
+  .main__picture:nth-child(2){
+    grid-area: ice-cream;
+    width: 229px;
+    height: 442px;
+  }
+
+  .main__picture:nth-child(3) {
+    grid-area: tape;
+    width: 229px;
+    height: 568px;
+  }
+
+  .main__picture:nth-child(4) {
+    grid-area: books;
+    width: 230px;
+    height: 230px;
+  }
+
+  .main__picture:nth-child(5) {
+    grid-area: street;
+    width: 479px;
+    height: 318px;
+  }
+
   .footer.decorated-zone::before {
     top: 45px;
   }
