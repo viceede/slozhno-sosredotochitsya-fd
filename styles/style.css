@@ -10,7 +10,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: var(--content-padding);
+	padding: 0 var(--content-padding);
 }
 
 .header {
@@ -24,6 +24,7 @@
 
 .decorated-zone::before {
 	position: absolute;
+	top: 10px;
 	justify-self: end;
 	content: '';
 	display: block;
@@ -35,7 +36,7 @@
 
 .decorated-zone::after {
 	position: absolute;
-	bottom: 20px;
+	bottom: 10px;
 	content: '';
 	display: block;
 	width: 25px;
@@ -56,6 +57,7 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	margin-top: 8.5px;
 }
 
 .header__rec-sign::after {
@@ -69,6 +71,7 @@
 }
 
 .header__theme-menu {
+	margin-top: 7px;
 	justify-self: end;
 	align-self: center;
 }
@@ -116,6 +119,10 @@
 	text-shadow: 4px 4px 0 var(--accent-color);
 	color: var(--accent-title-color);
 	line-height: var(--accent-title-line-height);
+}
+
+.header__describtion {
+	margin-bottom: 10px;
 }
 
 .title-decor {
@@ -196,17 +203,18 @@
 
 .footer .header__title {
 	text-shadow: 2px 2px 0 var(--accent-color);
+	margin-top: 8px;
 }
 
 .footer.decorated-zone::before {
 	position: absolute;
-	top: 20px;
+	top: 10px;
 	right: 0;
 }
 
 .footer.decorated-zone::after {
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
 }
 
