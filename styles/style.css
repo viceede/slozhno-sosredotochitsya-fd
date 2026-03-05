@@ -220,6 +220,10 @@
     margin-left: -20px;
   }
 
+  .header__title {
+    font-size: var(--accent-title-desktop-tablet-font-size)
+  }
+
   .decorated-zone::after {
     bottom: 35px;
   }
@@ -307,5 +311,21 @@
 
   .footer.decorated-zone::before {
     top: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list{ 
+    flex-direction: row;
+  }
+
+  .header__describtion {
+    inline-size: 491px;
   }
 }
