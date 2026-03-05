@@ -1,10 +1,10 @@
 :root.theme-dark {
-  --cover-image: url(../images/cover-image-dark.png);
-  /*Цвета*/
-  --accent-color: #FF0070;
-  --secondary-accent-color: #ff0070; /*цвет для заголовков, декоративных рамок в шапке и подвале */
-  --secondary-accent-color-hover: rgb(255, 0, 112, 0.5);
-  --accent-title-color: #DB00FF;
-  --text-color: #F1B2CE;
-  --accent-text-color: #000028;
+	--cover-image: url(../images/cover-image-dark.png);
+	/*Цвета*/
+	--accent-color: #ff0070;
+	--secondary-accent-color: #ff0070; /*цвет для заголовков, декоративных рамок в шапке и подвале */
+	--secondary-accent-color-hover: rgb(255, 0, 112, 0.5);
+	--accent-title-color: #db00ff;
+	--text-color: #f1b2ce;
+	--accent-text-color: #000028;
 }

@@ -1,28 +1,28 @@
 :root.theme-light {
-  --cover-image: url(../images/cover-image-light.png);
-  /*Цвета*/
-  --accent-color: #FF8DCB;
-  --secondary-accent-color: #353430; /*цвет для заголовков, декоративных рамок в шапке и подвале */
-  --secondary-accent-color-hover: rgb(53, 52, 48, 0.5);
-  --accent-title-color: #FFC2E6;
-  --text-color: #353430;
-  --accent-text-color: #353430;
+	--cover-image: url(../images/cover-image-light.png);
+	/*Цвета*/
+	--accent-color: #ff8dcb;
+	--secondary-accent-color: #353430; /*цвет для заголовков, декоративных рамок в шапке и подвале */
+	--secondary-accent-color-hover: rgb(53, 52, 48, 0.5);
+	--accent-title-color: #ffc2e6;
+	--text-color: #353430;
+	--accent-text-color: #353430;
 }
 
 /* Скрытие значка REC на светлой теме*/
 .rec-container {
-  display: none;
+	display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-      --cover-image: url(../images/cover-image-light.png);
-    /*Цвета*/
-    --accent-color: #FF8DCB;
-    --secondary-accent-color: #353430; /*цвет для заголовков, декоративных рамок в шапке и подвале */
-    --secondary-accent-color-hover: rgb(53, 52, 48, 0.5);
-    --accent-title-color: #FFC2E6;
-    --text-color: #353430;
-    --accent-text-color: #353430;
-  }
+	:root {
+		--cover-image: url(../images/cover-image-light.png);
+		/*Цвета*/
+		--accent-color: #ff8dcb;
+		--secondary-accent-color: #353430; /*цвет для заголовков, декоративных рамок в шапке и подвале */
+		--secondary-accent-color-hover: rgb(53, 52, 48, 0.5);
+		--accent-title-color: #ffc2e6;
+		--text-color: #353430;
+		--accent-text-color: #353430;
+	}
 }
