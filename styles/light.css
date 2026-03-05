@@ -10,7 +10,7 @@
 }
 
 /* Скрытие значка REC на светлой теме*/
-.rec-container {
+:root.theme-light .rec-container {
 	display: none;
 }
 
@@ -25,4 +25,8 @@
 		--text-color: #353430;
 		--accent-text-color: #353430;
 	}
+  /* Скрытие значка REC на светлой теме с включенной на устройстве светлой темой*/
+  :root.theme-auto .rec-container {
+    display: none;
+  }
 }
