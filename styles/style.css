@@ -222,6 +222,15 @@
 	:root {
 		--content-padding: 20px;
 		--global-gap: 60px;
+		--section-gap: 60px;
+	}
+
+	.decorated-zone::before {
+		top: 20px;
+	}
+
+	.header__theme-menu {
+		margin-top: 15px;
 	}
 
 	.header .header__title {
@@ -232,8 +241,12 @@
 		font-size: var(--accent-title-desktop-tablet-font-size);
 	}
 
+	.header__describtion {
+		margin-bottom: 20px;
+	}
+
 	.decorated-zone::after {
-		bottom: 35px;
+		bottom: 20px;
 	}
 
 	.header__describtion {
@@ -259,6 +272,10 @@
 		grid-row: 1/2;
 	}
 
+	.main__section:nth-child(1) > .main__section-container {
+		margin-left: 20px;
+	}
+
 	.main__section:nth-child(2) > .main__section-title {
 		grid-column: 1/2;
 		grid-row: 1;
@@ -267,10 +284,15 @@
 	.main__section:nth-child(2) > .main__section-container {
 		grid-column: 1/2;
 		grid-row: 2;
+		
 	}
 
 	.main__section:nth-child(3) > .main__section-container {
 		margin-left: 20px;
+	}
+
+	.main__picture-section .main__section-secondary-title.title-decor {
+		margin-bottom: 20px;
 	}
 
 	.main__picture-gallery {
@@ -318,7 +340,11 @@
 	}
 
 	.footer.decorated-zone::before {
-		top: 45px;
+		top: 20px;
+	}
+
+	.footer.decorated-zone::after {
+		bottom: 20px;
 	}
 }
 
