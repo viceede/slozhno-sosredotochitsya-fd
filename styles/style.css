@@ -352,6 +352,7 @@
 	.header__theme-menu {
 		justify-self: center;
 		align-self: start;
+		margin-top: 20px;
 	}
 
 	.header__theme-menu-list {
@@ -401,5 +402,17 @@
 	.main__section:nth-of-type(2) .main__section-paragraph:nth-of-type(3) {
 		grid-column: 3;
 		grid-row: 2;
+	}
+
+	.footer.decorated-zone::before {
+		top: 15px;
+	}
+
+	.footer .header__title {
+		margin-bottom: 15px;
+	}
+
+	.footer.decorated-zone::after {
+		bottom: 25px;
 	}
 }
