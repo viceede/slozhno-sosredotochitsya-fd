@@ -247,15 +247,12 @@
 
 	.header__describtion {
 		margin-bottom: 20px;
+		inline-size: 364px;
+		justify-self: right;
 	}
 
 	.decorated-zone::after {
 		bottom: 20px;
-	}
-
-	.header__describtion {
-		inline-size: 364px;
-		justify-self: right;
 	}
 
 	.main__section {
