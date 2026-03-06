@@ -288,7 +288,6 @@
 	.main__section:nth-child(2) > .main__section-container {
 		grid-column: 1/2;
 		grid-row: 2;
-		
 	}
 
 	.main__section:nth-child(3) > .main__section-container {
