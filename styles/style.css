@@ -4,6 +4,8 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--global-gap);
+	font-family: var(--main-font);
+	font-size: var(--main-font-size);
 	/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 	background-image: var(--cover-image);
 	background-attachment: fixed;
