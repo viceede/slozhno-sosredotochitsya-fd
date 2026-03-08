@@ -7,6 +7,7 @@
 	--accent-title-color: #ffc2e6;
 	--text-color: #353430;
 	--accent-text-color: #353430;
+	--bg-color: #fff1f7;
 }
 
 /* Скрытие значка REC на светлой теме*/
@@ -24,6 +25,7 @@
 		--accent-title-color: #ffc2e6;
 		--text-color: #353430;
 		--accent-text-color: #353430;
+		--bg-color: #fff1f7;
 	}
 	/* Скрытие значка REC на светлой теме с включенной на устройстве светлой темой*/
 	:root.theme-auto .rec-container {
